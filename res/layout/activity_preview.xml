@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/rl_preview_top"
+        android:layout_alignParentTop="true" 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#1c1c1c">
+        
+        <ImageView 
+            android:id="@+id/iv_preview_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/iv_select_back"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+    <TextView 
+        android:id="@+id/tv_preview_top"
+        android:layout_below="@id/rl_preview_top"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#000000"/>
+    
+    <TextView 
+        android:id="@+id/tv_preview_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#000000"/>
+    
+    <th.WeiXia.PicSelecter.Utils.MViewPager 
+        android:id="@+id/vp_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_preview_top"
+        android:layout_above="@+id/tv_preview_bottom"
+        android:contentDescription="@null" />
+
+</RelativeLayout>

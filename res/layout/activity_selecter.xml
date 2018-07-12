@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/tv_selecter_top"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FFFFFF"
+        android:drawableRight="@drawable/search"
+        android:drawableEnd="@drawable/search"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">       
+    </TextView>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#9933FF"/>
+    
+    <GridView 
+        android:id="@+id/gv_selecter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2dp"
+        android:horizontalSpacing="2dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:fadeScrollbars="true"
+        android:clipChildren="true">
+    </GridView>
+</LinearLayout>
